@@ -15,8 +15,40 @@ const center = css`
   align-items: center;
 `;
 
+const responsiveh = css`
+  @media (min-width: 201px) and (max-width: 500px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    align-items: center;
+    text-align: center;
+    nav {
+      width: 90vw;
+    }
+    a {
+      font-size: 15px;
+    }
+  }
+  @media (min-width: 501px) and (max-width: 900px) {
+    font-size: 18px;
+    width: 100%;
+    nav {
+      display: flex;
+      justify-content: space-evenly;
+      width: 40vw;
+    }
+  }
+  @media (min-width: 901px) and (max-width: 1536px) {
+    nav {
+      width: 30vw;
+    }
+  }
+`;
+
 export const NavBar = styled.section`
   position: fixed;
+  ${responsiveh}
   border-bottom: solid 2px green;
   width: 100%;
   background-color: black;
@@ -29,7 +61,6 @@ export const NavBar = styled.section`
     background-position: initial;
     display: flex;
     justify-content: space-between;
-    width: 20vw;
     background-color: rgba(0, 0, 0, 0.7);
   }
 
