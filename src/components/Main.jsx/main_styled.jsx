@@ -107,7 +107,7 @@ const responsivebx2 = css`
 
   @media (min-width: 901px) and (max-width: 1536px) {
     display: flex;
-    height: 140vh;
+    height: 153vh;
     align-items: center;
     p {
       font-size: 18px;
@@ -133,7 +133,7 @@ const responsivebx2 = css`
 const responsivebx3 = css`
   @media (max-width: 500px) {
     border: solid 1px red;
-    width: 90vw;
+    width: 100vw;
     border-radius: 10px;
     background-color: #424e51;
     color: white;
@@ -255,6 +255,7 @@ export const BoxThree = styled.section`
   background-color: black;
   color: white;
   height: 90vh;
+  width: 100%;
   flex-direction: column;
   justify-content: space-evenly;
   text-align: center;
