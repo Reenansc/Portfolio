@@ -133,7 +133,7 @@ const responsivebx2 = css`
 const responsivebx3 = css`
   @media (max-width: 500px) {
     border: solid 1px red;
-    width: 60vw;
+    width: 90vw;
     border-radius: 10px;
     background-color: #424e51;
     color: white;
@@ -143,7 +143,7 @@ const responsivebx3 = css`
     }
   }
   @media (min-width: 501px) and (max-width: 900px) {
-    border: solid 1px red;
+    background-color: black;
     width: 30vw;
     border-radius: 10px;
     background-color: #424e51;
@@ -154,24 +154,18 @@ const responsivebx3 = css`
     }
   }
 
-  @media (min-width: 901px) and (max-width: 1536px) {
-   
-  }
 `;
 
-const back = css`
-width: 100%;
-`
 
 const arrow = css`
   .rec .rec-arrow-left {
     background-color: green;
-    margin-left: 20%;
+    margin-left: 10%;
   }
 
   .rec .rec-arrow-right {
     background-color: green;
-    margin-right: 20%;
+    margin-right: 10%;
   }
 
   .rec.rec-pagination {
@@ -261,7 +255,6 @@ export const BoxThree = styled.section`
   background-color: black;
   color: white;
   height: 90vh;
-  width: 100vw;
   flex-direction: column;
   justify-content: space-evenly;
   text-align: center;
